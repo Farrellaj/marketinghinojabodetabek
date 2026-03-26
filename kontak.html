@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Marketing Hino - Hubungi Kami via WhatsApp & Telepon | Hino Jabodetabek</title>
+    <meta name="description" content="Hubungi tim sales Hino resmi via WhatsApp, telepon, atau kunjungi showroom kami. Layanan cepat, profesional, dan solusi terbaik untuk kebutuhan armada Hino Anda di Jabodetabek.">
+    <meta name="keywords" content="kontak hino, sales hino, dealer hino, hubungi hino, alamat showroom hino, hino dutro, hino ranger, hino bus">
+    <meta name="author" content="Marketing Hino Jabodetabek">
+    <link rel="canonical" href="https://marketinghinojabodetabek.com/kontak.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kontak Marketing Hino - Hubungi Kami via WhatsApp & Telepon">
+    <meta property="og:description" content="Hubungi tim sales Hino resmi via WhatsApp, telepon, atau kunjungi showroom kami untuk konsultasi kebutuhan armada Hino Anda.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marketinghinojabodetabek.com/kontak.html">
+    <meta property="og:image" content="https://marketinghinojabodetabek.com/img/hinologo.webp">
+    <meta property="og:site_name" content="Hino Jabodetabek">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kontak Marketing Hino - Hubungi Kami via WhatsApp & Telepon">
+    <meta name="twitter:description" content="Hubungi tim sales Hino resmi via WhatsApp, telepon, atau kunjungi showroom kami.">
+    <meta name="twitter:image" content="https://marketinghinojabodetabek.com/img/hinologo.webp">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #1da851;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+            border-color: #2e7d32;
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .floating-whatsapp {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/hinologo.webp" alt="Hino Logo" class="h-10 w-auto mr-3">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-green-600 transition">Tentang Kami</a>
+                    <a href="products.html" class="text-gray-600 hover:text-green-600 transition">Produk</a>
+                    <a href="article/promo.html" class="text-gray-600 hover:text-green-600 transition">Berita & Promo</a>
+                    <a href="kontak.html" class="text-green-600 font-semibold border-b-2 border-green-600 pb-1">Kontak</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/628987633469" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700 transition hidden md:block">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600">Home</a>
+                    <a href="about.html" class="text-gray-600">Tentang Kami</a>
+                    <a href="products.html" class="text-gray-600">Produk</a>
+                    <a href="article/promo.html" class="text-gray-600">Berita & Promo</a>
+                    <a href="kontak.html" class="text-green-600 font-semibold">Kontak</a>
+                    <a href="https://wa.me/628987633469" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white py-4 border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm">
+                <a href="index.html" class="text-gray-500 hover:text-green-600 transition">Home</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-green-600 font-medium">Kontak Kami</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. HEADLINE -->
+    <section class="pt-12 pb-8 bg-gradient-to-r from-green-50 to-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hubungi Kami</h1>
+                <p class="text-xl text-gray-600">Kami siap membantu mendapatkan solusi terbaik untuk kebutuhan niaga truk Hino di Jabodetabek.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. OFFICIAL WHATSAPP -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="contact-card p-8 text-center bg-gradient-to-r from-green-50 to-white">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-4xl text-green-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-2">WhatsApp Official</h2>
+                    <p class="text-gray-600 mb-6">Kirim pesan langsung untuk konsultasi, simulasi kredit, atau informasi promo terbaru.</p>
+                    <div class="bg-white rounded-xl p-4 inline-block mb-6 shadow-sm">
+                        <span class="text-xl font-bold text-green-600">0898-7633-469</span>
+                        <p class="text-sm text-gray-500">Farrel - Sales Consultant Hino</p>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/628987633469?text=Halo%20Sales%20Hino,%20saya%20ingin%20konsultasi%20tentang%20truk%20Hino" 
+                           target="_blank" class="btn-whatsapp text-white font-bold py-4 px-8 rounded-xl inline-flex items-center gap-3">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>Chat via WhatsApp Sekarang</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOCIAL MEDIA -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800">Ikuti Kami di Media Sosial</h2>
+                <p class="text-gray-600">Dapatkan update terbaru seputar Hino</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="social-icon bg-pink-500 hover:bg-pink-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon bg-black hover:bg-gray-800 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl transition">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#" class="social-icon bg-blue-700 hover:bg-blue-800 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon bg-blue-600 hover:bg-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl transition">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. KONTAK TELEPON & EMAIL -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Telepon -->
+                <div class="contact-card p-6 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Telepon</h3>
+                    <p class="text-gray-600 mb-4">Hubungi langsung untuk informasi cepat</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="font-bold text-lg">0838-9530-0845</div>
+                            <div class="text-sm text-gray-500">Farrel - Sales Consultant</div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="tel:083895300845" class="inline-flex items-center gap-2 text-green-600 font-semibold border border-green-600 px-6 py-2 rounded-lg hover:bg-green-600 hover:text-white transition">
+                            <i class="fas fa-phone"></i> Telepon Sekarang
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Email -->
+                <div class="contact-card p-6 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-600 mb-4">Kirim pertanyaan via email</p>
+                    <div>
+                        <div class="font-bold text-base break-all">sales@hinojabodetabek.id</div>
+                        <div class="text-sm text-gray-500 mt-1">Email Resmi Marketing</div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="mailto:sales@hinojabodetabek.id" class="inline-flex items-center gap-2 text-green-600 font-semibold border border-green-600 px-6 py-2 rounded-lg hover:bg-green-600 hover:text-white transition">
+                            <i class="fas fa-envelope"></i> Kirim Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MAPS + ALAMAT (Paling Bawah) -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="contact-card overflow-hidden">
+                    <div class="p-6 bg-green-50 border-b border-green-100">
+                        <h2 class="text-2xl font-bold text-center text-gray-800">Lokasi Showroom</h2>
+                    </div>
+                    <div class="p-6">
+                        <!-- Maps -->
+                        <div class="map-container h-80 mb-6">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7973791917573!2d106.66523757587159!3d-6.154220360389269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9c8b5a5c3c3%3A0x3c5b5e5e5e5e5e5e!2sJl.%20Daan%20Mogot%20No.8%2C%20Batuceper%2C%20Kec.%20Batuceper%2C%20Kota%20Tangerang%2C%20Banten%2015122!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        
+                        <!-- Alamat -->
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center gap-2 mb-2">
+                                <i class="fas fa-map-marker-alt text-green-600 text-xl"></i>
+                                <h3 class="text-lg font-semibold text-gray-800">Alamat Showroom</h3>
+                            </div>
+                            <p class="text-gray-600 max-w-md mx-auto">
+                                Jl. Daan Mogot No.8 Km. 20, Batuceper, Kec. Batuceper, Kota Tangerang, Banten 15122
+                            </p>
+                            <div class="mt-4">
+                                <a href="https://maps.google.com/?q=Jl.+Daan+Mogot+No.8+Km.+20,+Batuceper,+Kec.+Batuceper,+Kota+Tangerang,+Banten+15122" 
+                                   target="_blank" class="inline-flex items-center gap-2 text-green-600 font-medium hover:underline">
+                                    <i class="fas fa-directions"></i> Buka di Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <a href="index.html" class="flex items-center">
+                            <img src="img/hinologo.webp" alt="Hino Logo" class="h-10 w-auto mr-3">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6">Dealer resmi Hino Indonesia yang menyediakan solusi kendaraan terbaik dengan pelayanan profesional dan harga kompetitif.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Menu Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Produk Hino</a></li>
+                        <li><a href="article/promo.html" class="text-gray-400 hover:text-white transition">Berita & Promo</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Kategori Produk</h4>
+                    <ul class="space-y-3">
+                        <li><a href="hino300.html" class="text-gray-400 hover:text-white transition">Hino Dutro Series</a></li>
+                        <li><a href="hino500.html" class="text-gray-400 hover:text-white transition">Hino Ranger Series</a></li>
+                        <li><a href="hinobus.html" class="text-gray-400 hover:text-white transition">Hino Bus Series</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-500 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Jl. Daan Mogot No.8 Km. 20, Batuceper, Kota Tangerang, Banten 15122</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-green-500 mr-3"></i>
+                            <span class="text-gray-400">083895300845 (Farrel)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-green-500 mr-3"></i>
+                            <span class="text-gray-400">08987633469 (Farrel)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Marketing Hino Jabodetabek. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Chat -->
+    <a href="https://wa.me/628987633469" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-green-600 transition floating-whatsapp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Animasi scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.contact-card').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

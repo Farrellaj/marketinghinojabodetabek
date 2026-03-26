@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Tukar Tambah Harga Terbaik untuk Armada Hino | Hino Jabodetabek</title>
+    <meta name="description" content="Tukarkan armada Hino lama Anda dengan harga terbaik dan dapatkan potongan harga spesial untuk unit Hino terbaru. Penilaian cepat dan proses mudah!">
+    <meta name="keywords" content="tukar tambah hino, trade in hino, harga terbaik hino, upgrade armada hino, program tukar tambah">
+    <meta name="author" content="Marketing Hino Jabodetabek">
+    <meta property="og:title" content="Program Tukar Tambah Harga Terbaik untuk Armada Hino">
+    <meta property="og:description" content="Tukarkan armada Hino lama Anda dengan harga terbaik dan dapatkan potongan harga spesial untuk unit Hino terbaru.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://marketinghinojabodetabek.com/article/hino-tukar-tambah.html">
+    <meta property="og:image" content="https://marketinghinojabodetabek.com/img/hinorangerseries.jpg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Global Artikel -->
+    <link rel="stylesheet" href="global/article.css">
+    <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+    
+    <style>
+        .floating-whatsapp {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .trade-step {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .trade-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: #2e7d32;
+        }
+        
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: #2e7d32;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 16px auto;
+        }
+        
+        .benefit-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-box:hover {
+            transform: translateY(-3px);
+        }
+        
+        .vehicle-checklist {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../img/hinologo.webp" alt="Hino Logo" class="h-10 w-auto mr-3">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-gray-600 hover:text-green-600 transition">Home</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-green-600 transition">Tentang Kami</a>
+                    <a href="../products.html" class="text-gray-600 hover:text-green-600 transition">Produk</a>
+                    <a href="promo.html" class="text-gray-600 hover:text-green-600 transition">Berita & Promo</a>
+                    <a href="../kontak.html" class="text-gray-600 hover:text-green-600 transition">Kontak</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/628987633469" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700 transition hidden md:block">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="../index.html" class="text-gray-600">Home</a>
+                    <a href="../about.html" class="text-gray-600">Tentang Kami</a>
+                    <a href="../products.html" class="text-gray-600">Produk</a>
+                    <a href="promo.html" class="text-green-600 font-semibold">Berita & Promo</a>
+                    <a href="../kontak.html" class="text-gray-600">Kontak</a>
+                    <a href="https://wa.me/628987633469" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white py-4 border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm">
+                <a href="../index.html" class="text-gray-500 hover:text-green-600 transition">Home</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <a href="promo.html" class="text-gray-500 hover:text-green-600 transition">Berita & Promo</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-green-600 font-medium">Tukar Tambah Hino</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Header -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Category Badge -->
+            <div class="mb-4">
+                <span class="badge-promo">
+                    <i class="fas fa-tags mr-1"></i> Promo
+                </span>
+            </div>
+            
+            <!-- Title -->
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">Program Tukar Tambah Harga Terbaik untuk Armada Hino</h1>
+            
+            <!-- Meta Info -->
+            <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-6 pb-4 border-b">
+                <div class="flex items-center gap-2">
+                    <i class="far fa-calendar-alt"></i>
+                    <span id="article-date" data-date="2026-02-28">28 Februari 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="far fa-user"></i>
+                    <span>Marketing Hino Jabodetabek</span>
+                </div>
+                <div class="flex items-center gap-2 text-green-600">
+                    <i class="fas fa-handshake"></i>
+                    <span>Tukar Tambah</span>
+                </div>
+            </div>
+            
+            <!-- Featured Image -->
+            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                <img src="../img/hinorangerseries.jpg" alt="Program Tukar Tambah Hino" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Action Buttons (Back & Share) -->
+            <div class="flex justify-between items-center mb-8">
+                <a href="promo.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Berita & Promo
+                </a>
+                <button onclick="shareArticle('Program Tukar Tambah Harga Terbaik untuk Armada Hino', window.location.href)" class="share-button">
+                    <i class="fas fa-share-alt"></i> Bagikan Program
+                </button>
+            </div>
+            
+            <!-- Article Body -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 md:p-10 article-content">
+                <p class="text-lg font-medium text-green-700 mb-6">
+                    Jakarta, 28 Februari 2026 – PT Hino Indonesia Sales menghadirkan program spesial untuk para pelanggan setia yang ingin meningkatkan kualitas armada mereka. Melalui <strong class="font-bold">Program Tukar Tambah Harga Terbaik</strong>, Anda dapat menukarkan armada Hino lama dengan unit terbaru yang dilengkapi teknologi Euro 4.
+                </p>
+                
+                <div class="bg-yellow-50 p-6 rounded-xl my-8 border-l-4 border-yellow-500">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-gift text-2xl text-yellow-600"></i>
+                        <div>
+                            <p class="font-semibold text-yellow-800 mb-1">Program Spesial Terbatas!</p>
+                            <p class="text-gray-700">Program tukar tambah ini berlaku untuk semua model Hino Dutro, Hino Ranger, dan Hino Bus. Penilaian cepat, proses mudah, dan potongan spesial untuk unit baru.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Keuntungan Program Tukar Tambah Hino</h2>
+                <p>
+                    Dengan mengikuti program tukar tambah ini, Anda akan mendapatkan berbagai keuntungan yang menguntungkan untuk pengembangan usaha:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+                    <div class="benefit-box">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Nilai Tertinggi</h3>
+                        <p class="text-sm text-gray-600">Penilaian armada lama Anda dengan harga terbaik di pasar</p>
+                    </div>
+                    <div class="benefit-box">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-bolt text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Proses Cepat</h3>
+                        <p class="text-sm text-gray-600">Penilaian instan, proses administrasi yang tidak berbelit</p>
+                    </div>
+                    <div class="benefit-box">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Garansi Resmi</h3>
+                        <p class="text-sm text-gray-600">Unit baru bergaransi resmi Hino 5 tahun</p>
+                    </div>
+                </div>
+                
+                <h2>3 Langkah Mudah Tukar Tambah</h2>
+                <p>
+                    Program tukar tambah dirancang semudah mungkin untuk kenyamanan Anda:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+                    <div class="trade-step">
+                        <div class="step-number">1</div>
+                        <h3 class="font-bold text-lg mb-2">Konsultasi</h3>
+                        <p class="text-gray-600 text-sm">Hubungi tim sales kami untuk konsultasi kebutuhan armada Anda</p>
+                    </div>
+                    <div class="trade-step">
+                        <div class="step-number">2</div>
+                        <h3 class="font-bold text-lg mb-2">Penilaian</h3>
+                        <p class="text-gray-600 text-sm">Tim kami akan melakukan penilaian armada lama Anda secara profesional</p>
+                    </div>
+                    <div class="trade-step">
+                        <div class="step-number">3</div>
+                        <h3 class="font-bold text-lg mb-2">Proses & Terima</h3>
+                        <p class="text-gray-600 text-sm">Selesaikan administrasi dan terima unit Hino terbaru</p>
+                    </div>
+                </div>
+                
+                <h2>Kriteria Armada yang Dapat Ditukar</h2>
+                <p>
+                    Program tukar tambah ini menerima berbagai jenis armada dengan ketentuan sebagai berikut:
+                </p>
+                
+                <div class="vehicle-checklist mt-4">
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle text-green-600"></i>
+                        <span>Semua model Hino (Dutro, Ranger, Bus) dari tahun berapapun</span>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle text-green-600"></i>
+                        <span>Kendaraan dalam kondisi siap pakai atau butuh perbaikan ringan</span>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle text-green-600"></i>
+                        <span>Kelengkapan dokumen kepemilikan (BPKB, STNK) masih lengkap</span>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle text-green-600"></i>
+                        <span>Tidak ada kendala hukum atau sengketa kepemilikan</span>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle text-green-600"></i>
+                        <span>Nomor rangka dan mesin masih sesuai dengan dokumen</span>
+                    </div>
+                </div>
+                
+                <h2>Dokumen yang Diperlukan</h2>
+                <p>
+                    Untuk kelancaran proses tukar tambah, siapkan dokumen-dokumen berikut:
+                </p>
+                <ul>
+                    <li>BPKB asli (sesuai dengan nama pemilik)</li>
+                    <li>STNK asli yang masih berlaku</li>
+                    <li>Faktur pembelian asli (jika ada)</li>
+                    <li>KTP pemilik kendaraan</li>
+                    <li>NPWP (untuk badan usaha)</li>
+                    <li>Surat keterangan tidak dalam sengketa (jika diperlukan)</li>
+                </ul>
+                
+                <h2>Keunggulan Unit Hino Terbaru</h2>
+                <p>
+                    Dengan melakukan tukar tambah ke unit Hino terbaru, Anda akan mendapatkan berbagai peningkatan yang mendukung produktivitas usaha:
+                </p>
+                <ul>
+                    <li><strong>Teknologi Euro 4</strong> – Mesin lebih ramah lingkungan dan efisien bahan bakar</li>
+                    <li><strong>Performa Lebih Optimal</strong> – Tenaga mesin ditingkatkan untuk beban maksimal</li>
+                    <li><strong>Kenyamanan Berkendara</strong> – Kabin lebih luas dengan fitur keselamatan lengkap</li>
+                    <li><strong>Garansi Resmi 5 Tahun</strong> – Perlindungan maksimal untuk investasi Anda</li>
+                    <li><strong>Program Free Service</strong> – Biaya perawatan lebih hemat dengan program spesial</li>
+                </ul>
+                
+                <div class="bg-green-50 p-6 rounded-xl my-8">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-lightbulb text-3xl text-green-600"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Tips Memaksimalkan Nilai Tukar Armada Anda</h3>
+                            <p class="text-gray-600 text-sm">Lakukan perawatan rutin sebelum penilaian, bersihkan kendaraan, dan pastikan semua dokumen lengkap untuk mendapatkan nilai terbaik dari armada lama Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>FAQ Seputar Program Tukar Tambah</h2>
+                
+                <div class="space-y-4 mt-4">
+                    <div class="border-b border-gray-100 pb-3">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                            <i class="fas fa-question-circle text-green-600"></i>
+                            Apakah bisa menukar lebih dari satu armada?
+                        </h3>
+                        <p class="text-gray-600">Ya, Anda dapat menukarkan lebih dari satu unit armada. Tim kami akan memberikan penilaian untuk masing-masing unit dan memberikan skema yang paling menguntungkan.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-3">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                            <i class="fas fa-question-circle text-green-600"></i>
+                            Berapa lama proses tukar tambah?
+                        </h3>
+                        <p class="text-gray-600">Proses penilaian dilakukan dalam 1 hari kerja. Setelah itu, proses administrasi dan pengambilan unit baru dapat diselesaikan dalam 3-5 hari kerja tergantung kelengkapan dokumen.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-3">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                            <i class="fas fa-question-circle text-green-600"></i>
+                            Apakah armada yang rusak berat bisa ditukar?
+                        </h3>
+                        <p class="text-gray-600">Armada dengan kerusakan berat tetap dapat ditukar dengan penilaian khusus. Tim kami akan melakukan inspeksi untuk menentukan nilai yang sesuai.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center my-8">
+                    <a href="https://wa.me/628987633469?text=Halo,%20saya%20tertarik%20dengan%20program%20Tukar%20Tambah%20Hino" 
+                       target="_blank" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                        <i class="fab fa-whatsapp mr-3 text-xl"></i> Konsultasi Program Tukar Tambah
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Promo & Berita Terkait</h2>
+                <a href="promo.html" class="text-green-600 hover:text-green-700 font-medium">
+                    Lihat Semua <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Artikel Terkait 1: Free Service -->
+                <div class="related-card bg-white rounded-xl shadow-md border border-gray-100">
+                    <div class="h-40 overflow-hidden">
+                        <img src="../img/hinorangerseries.jpg" alt="Free Service Hino" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <span class="badge-promo text-xs">Promo</span>
+                        <h3 class="font-bold text-lg mt-2 mb-2 line-clamp-2">Free Service & Oli 5 Tahun untuk Pembelian Hino Ranger</h3>
+                        <p class="text-gray-500 text-sm line-clamp-2 mb-3">Program free service dan penggantian oli gratis selama 5 tahun.</p>
+                        <a href="hino-ranger-free-service.html" class="read-more text-sm">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Artikel Terkait 2: Promo Dutro -->
+                <div class="related-card bg-white rounded-xl shadow-md border border-gray-100">
+                    <div class="h-40 overflow-hidden">
+                        <img src="../img/hinodutroseries.jpg" alt="Promo Hino Dutro" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <span class="badge-promo text-xs">Promo</span>
+                        <h3 class="font-bold text-lg mt-2 mb-2 line-clamp-2">Promo Spesial Awal Tahun: DP Ringan + Bunga 0% untuk Hino Dutro</h3>
+                        <p class="text-gray-500 text-sm line-clamp-2 mb-3">Kemudahan memiliki Hino Dutro dengan DP ringan dan bunga 0%.</p>
+                        <a href="hino-dutro-dp-ringan.html" class="read-more text-sm">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Artikel Terkait 3: Truk Terbaik -->
+                <div class="related-card bg-white rounded-xl shadow-md border border-gray-100">
+                    <div class="h-40 overflow-hidden">
+                        <img src="../img/hinorangerseries.jpg" alt="Truk Terbaik" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4">
+                        <span class="badge-news text-xs">Prestasi</span>
+                        <h3 class="font-bold text-lg mt-2 mb-2 line-clamp-2">Hino Raih Penghargaan Truk Terbaik 2026 dari Majalah Otomotif</h3>
+                        <p class="text-gray-500 text-sm line-clamp-2 mb-3">Hino Ranger FL 280 JW dinobatkan sebagai truk heavy duty terbaik.</p>
+                        <a href="hino-truk-terbaik-2026.html" class="read-more text-sm">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 bg-gradient-to-r from-green-600 to-green-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-2xl mx-auto">
+                <i class="fas fa-exchange-alt text-4xl mb-4"></i>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Tingkatkan Armada Anda Sekarang!</h2>
+                <p class="text-lg mb-6 opacity-90">Dapatkan nilai terbaik untuk armada lama Anda dan nikmati teknologi terbaru Hino dengan program tukar tambah spesial.</p>
+                <a href="https://wa.me/628987633469?text=Halo,%20saya%20tertarik%20dengan%20program%20Tukar%20Tambah%20Hino" 
+                   target="_blank" class="inline-flex items-center bg-white text-green-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition">
+                    <i class="fab fa-whatsapp mr-3 text-xl"></i> Konsultasi Tukar Tambah
+                </a>
+                <p class="text-sm mt-4 opacity-80">
+                    <i class="fas fa-calendar-alt mr-1"></i> Program terbatas, segera hubungi kami!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <a href="../index.html" class="flex items-center">
+                            <img src="../img/hinologo.webp" alt="Hino Logo" class="h-10 w-auto mr-3">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6">Dealer resmi Hino Indonesia yang menyediakan solusi kendaraan terbaik dengan pelayanan profesional dan harga kompetitif.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Menu Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white transition">Produk Hino</a></li>
+                        <li><a href="promo.html" class="text-gray-400 hover:text-white transition">Berita & Promo</a></li>
+                        <li><a href="../kontak.html" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Kategori Produk</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../hino300.html" class="text-gray-400 hover:text-white transition">Hino Dutro Series</a></li>
+                        <li><a href="../hino500.html" class="text-gray-400 hover:text-white transition">Hino Ranger Series</a></li>
+                        <li><a href="../hinobus.html" class="text-gray-400 hover:text-white transition">Hino Bus Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-500 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Jl. Daan Mogot No.8 Km. 20, Batuceper, Kota Tangerang, Banten 15122</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-green-500 mr-3"></i>
+                            <span class="text-gray-400">083895300845 (Farrel)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-green-500 mr-3"></i>
+                            <span class="text-gray-400">08987633469 (Farrel)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Marketing Hino Jabodetabek. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/628987633469" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-green-600 transition floating-whatsapp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JS Global -->
+    <script src="global/article.js"></script>
+</body>
+</html>

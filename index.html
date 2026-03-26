@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Hino Jabodetabek | Harga & Promo Hino Jabodetabek</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body class="text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo Hino -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/hinologo.webp" alt="Hino Logo" class="h-10 w-auto mr-3">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-green-600 font-semibold border-b-2 border-green-600 pb-1">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-green-600 transition">Tentang Kami</a>
+                    <a href="products.html" class="text-gray-600 hover:text-green-600 transition">Produk</a>
+                    <a href="article/promo.html" class="text-gray-600 hover:text-green-600 transition">Berita & Promo</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-green-600 transition">Kontak</a>
+                </div>
+
+                <!-- CTA Button & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700 transition hidden md:block">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-green-600 font-semibold">Home</a>
+                    <a href="#about" class="text-gray-600">Tentang Kami</a>
+                    <a href="products.html" class="text-gray-600">Produk</a>
+                    <a href="article/promo.html" class="text-gray-600">Promo</a>
+                    <a href="kontak.html" class="text-gray-600">Kontak</a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section dengan Background Auto-Slide -->
+    <section class="hero-section" id="about">
+        <!-- Background Auto-Slide -->
+        <div class="slide-container">
+            <!-- Slide 1 -->
+            <div class="slide" style="background-image: url('img/hino300_euro4.webp');"></div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('img/hino500_euro4.webp');"></div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('img/hinobus_euro4.webp');"></div>
+            
+            <!-- Overlay gelap untuk kontras teks -->
+            <div class="overlay"></div>
+        </div>
+        
+        <!-- Konten Hero -->
+        <div class="hero-content container mx-auto px-4 h-full flex items-center">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Dealer Resmi Hino Indonesia
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-white mb-10 opacity-90 max-w-3xl">
+                    Profesional, cepat, dan siap memberikan solusi terbaik untuk kebutuhan kendaraan bisnis Anda. Layanan responsif, proses mudah, dan harga kompetitif!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="btn-primary text-white font-bold py-4 px-10 rounded-lg text-center text-lg">
+                        <i class="fab fa-whatsapp mr-3"></i> WhatsApp Sekarang
+                    </a>
+                    
+                    <a href="#products" class="bg-transparent border-2 border-white text-white font-bold py-4 px-10 rounded-lg text-center text-lg hover:bg-white hover:text-gray-900 transition duration-300">
+                        Lihat Produk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Produk Hino Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hino Dutro Series -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="img/hinodutroseries.jpg" 
+                             alt="Hino Dutro Series" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 text-green-600 p-2 rounded-lg mr-3">
+                                <i class="fas fa-users text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Hino Dutro Series</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">Truk ringan dan tangguh, cocok untuk usaha kecil dan menengah.</p>
+                        <a href="products.html#hino300" class="text-green-600 font-semibold flex items-center">
+                            Lihat Varian <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hino Ranger Series-->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="img/hinorangerseries.jpg" 
+                             alt="Hino Ranger Series" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 text-blue-600 p-2 rounded-lg mr-3">
+                                <i class="fas fa-truck text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Hino Ranger Series</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">Performa handal untuk pengangkutan berat dan jarak jauh.</p>
+                        <a href="products.html#hino500" class="text-green-600 font-semibold flex items-center">
+                            Lihat Varian <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hino Bus Series -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="img/hinobusseries.jpg" 
+                             alt="Hino Bus Series" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 text-green-600 p-2 rounded-lg mr-3">
+                                <i class="fas fa-truck-loading text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Hino Bus Series</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">Solusi transportasi penumpang dengan kenyamanan terbaik.</p>
+                        <a href="products.html#hinobus" class="text-green-600 font-semibold flex items-center">
+                            Lihat Varian <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section untuk Simulasi Kredit -->
+    <section class="credit-cta py-16 text-white relative z-10">
+        <div class="container mx-auto px-4 text-center relative z-20">
+            <div class="max-w-4xl mx-auto">
+                <!-- Ikon dan Judul -->
+                <div class="flex justify-center mb-8">
+                    <div class="bg-white text-green-600 w-20 h-20 rounded-full flex items-center justify-center pulse-animation">
+                        <i class="fas fa-calculator text-3xl"></i>
+                    </div>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Chat di WhatsApp untuk Simulasi Kredit
+                </h2>
+                
+                <p class="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
+                    Kami bantu Anda dari simulasi kredit sampai persetujuan (approve) dengan proses mudah dan cepat untuk pengadaan kendaraan Hino
+                </p>
+                
+                <!-- Keunggulan -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                        <div class="text-3xl mb-4">💰</div>
+                        <h4 class="font-bold text-lg mb-2">Simulasi Gratis</h4>
+                        <p class="text-sm opacity-90">Hitung Simulasi Kredit Sesuai Kebutuhan Anda</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                        <div class="text-3xl mb-4">📋</div>
+                        <h4 class="font-bold text-lg mb-2">Bantuan Dokumen</h4>
+                        <p class="text-sm opacity-90">Kami bantu persiapkan dokumen untuk pembayaran cash kredit dengan lengkap</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                        <div class="text-3xl mb-4">✅</div>
+                        <h4 class="font-bold text-lg mb-2">Dibantu sampai Approve</h4>
+                        <p class="text-sm opacity-90">Pendampingan sampai kredit disetujui oleh leasing</p>
+                    </div>
+                </div>
+                
+                <!-- Tombol WhatsApp Besar -->
+                <div class="mb-8">
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20simulasi%20kredit%20Hino" 
+                       target="_blank" class="btn-whatsapp text-white font-bold py-5 px-10 rounded-lg text-center text-xl inline-block">
+                        <i class="fab fa-whatsapp mr-3"></i> MULAI SIMULASI KREDIT SEKARANG
+                    </a>
+                </div>
+                
+                <p class="text-sm opacity-80">
+                    <i class="fas fa-clock mr-2"></i> Respon cepat dalam 5 menit | 
+                    <i class="fas fa-shield-alt mr-2 ml-4"></i> Proses aman & terpercaya | 
+                    <i class="fas fa-user-tie mr-2 ml-4"></i> Konsultasi gratis
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Langkah Mudah Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">3 Langkah Mudah Dapatkan Hino</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Langkah 1 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                            1
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Chat WhatsApp untuk Simulasi</h3>
+                    <p class="text-gray-600">Hubungi kami via WhatsApp untuk konsultasi truk Hino dan simulasi kredit sesuai kebutuhan Anda.</p>
+                </div>
+                
+                <!-- Langkah 2 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                            2
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Lengkapi Dokumen</h3>
+                    <p class="text-gray-600">Tim kami bantu persiapkan dokumen kredit yang diperlukan dengan panduan lengkap.</p>
+                </div>
+                
+                <!-- Langkah 3 -->
+                <div class="text-center">
+                    <div class="relative mb-6">
+                        <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                            3
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Terima Kendaraan</h3>
+                    <p class="text-gray-600">Setelah kredit disetujui, kendaraan Hino siap kami antar ke lokasi Anda.</p>
+                </div>
+            </div>
+            
+            <!-- CTA Tambahan -->
+            <div class="text-center mt-12">
+                <p class="text-xl font-bold text-gray-800 mb-6">Masih ragu atau ada pertanyaan?</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ada%20pertanyaan%20tentang%20kredit%20Hino" 
+                   target="_blank" class="bg-gray-800 text-white font-bold py-4 px-8 rounded-lg inline-block hover:bg-gray-900 transition">
+                    <i class="fas fa-question-circle mr-2"></i> TANYAKAN SEKARANG
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info dengan logo Hino -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <a href="index.html" class="flex items-center">
+                            <img src="img/hinologo.webp" alt="Hino Logo" class="h-10 w-auto mr-3">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6">Salah Satu Dealer resmi Hino Indonesia yang menyediakan solusi kendaraan terbaik dengan pelayanan profesional dan harga kompetitif.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Menu Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Produk Hino</a></li>
+                        <li><a href="article/promo.html" class="text-gray-400 hover:text-white transition">Berita & Promo</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Produk -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Kategori Produk</h4>
+                    <ul class="space-y-3">
+                        <li><a href="hino300.html" class="text-gray-400 hover:text-white transition">Hino Dutro Series</a></li>
+                        <li><a href="hino500.html" class="text-gray-400 hover:text-white transition">Hino Ranger Series</a></li>
+                        <li><a href="hinobus.html" class="text-gray-400 hover:text-white transition">Hino Bus Series</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-600 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Jl. Daan Mogot No.8 Km. 20, Batuceper, Kec. Batuceper, Kota Tangerang, Banten 15122</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-green-600 mr-3"></i>
+                            <span class="text-gray-400">083895300845 (Farrel)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-green-600 mr-3"></i>
+                            <span class="text-gray-400">08987633469 (Farrel)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Marketing Hino Jabodetabek. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Chat -->
+    <a href="https://wa.me/628987633469" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-green-600 transition pulse-animation">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Sales Chat Widget -->
+    <div class="fixed bottom-28 right-6 bg-white rounded-xl shadow-2xl z-50 hidden md:block w-80" id="sales-chat-widget">
+        <div class="bg-green-600 text-white p-4 rounded-t-xl flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-white text-green-600 flex items-center justify-center font-bold mr-3">A</div>
+                <div>
+                    <div class="font-bold">Farrel Hino</div>
+                    <div class="text-xs opacity-90">Sales Consultant Hino</div>
+                </div>
+            </div>
+            <button id="close-chat" class="text-white">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4">
+            <p class="text-gray-700 mb-4">Butuh simulasi kredit Hino? Saya siap bantu hitung cicilan dan proses kredit sampai approve! 😊</p>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20simulasi%20kredit%20Hino" 
+               target="_blank" class="btn-whatsapp text-white py-3 px-4 rounded-lg text-center block mb-3">
+                <i class="fab fa-whatsapp mr-2"></i> Simulasi Kredit Hino
+            </a>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20tanya%20tentang%20produk%20Hino" 
+               target="_blank" class="bg-gray-100 text-gray-800 py-3 px-4 rounded-lg text-center block hover:bg-gray-200 transition">
+                <i class="fas fa-car mr-2"></i> Tanya Produk Hino
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript untuk Auto-Slide dan Fungsi Lainnya -->
+    <script src="js/home.js"></script>
+</body>
+</html>
