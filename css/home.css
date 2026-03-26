@@ -29,6 +29,10 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        .slide.active {
+            opacity: 0.25; /* Opacity rendah sesuai permintaan */
+        }
         
         .overlay {
             position: absolute;
